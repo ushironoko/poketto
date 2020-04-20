@@ -18,5 +18,4 @@ const App = defineComponent({
 
 const app = createApp(App)
 app.use(Router)
-app.mount('#app')
-
+app.mount('#root')
