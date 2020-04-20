@@ -4,10 +4,10 @@ import Index from '~/views/index.tsx'
 const routes = [
   {
     path: '/',
-    component: Index
+    component: Index,
   },
 ]
 
 export const route = new Router({
-  routes
+  routes,
 })
