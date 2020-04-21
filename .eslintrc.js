@@ -1,12 +1,26 @@
-module.export = {
+module.exports = {
   "root": true,
-  "parser": "@typescript-eslint/parser",
+  "env": {
+    "browser": true,
+    "es6": true,
+  },
   "extends": [
+    "prettier/vue",
+    "plugin:vue/vue3-recommended",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
-    "plugin:vue/recommended",
-    "prettier/vue",
   ],
-  "plugins": ["vue", "prettier", "@typescript-eslint"],
+  "parser": "vue-eslint-parser",
+  "parserOptions": {
+    "parser": "@typescript-eslint/parser",
+    "ecmaVersion": 2018,
+    "warnOnUnsupportedTypeScriptVersion": false,
+    "project": './tsconfig.json',
+    "tsconfigRootDir": __dirname
+  },
+  "plugins": [
+    "prettier",
+    "@typescript-eslint"
+  ],
   "rules": {},
 }
