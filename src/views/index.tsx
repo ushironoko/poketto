@@ -1,6 +1,6 @@
 import { h } from '~/helpers/h'
 import { defineComponent } from 'vue'
-export default defineComponent({
+export const Index = defineComponent({
     name: 'index',
     setup() {
       const appName = 'poketto'

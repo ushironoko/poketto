@@ -1,8 +1,7 @@
-import { ComponentPublicInstance } from 'vue'
 import { createRouter, createWebHistory } from 'vue-router'
-import Index from '~/views/index.tsx'
+import { Index } from '~/views/index.tsx'
 
-const routerHistory = createWebHistory()
+export const routerHistory = createWebHistory()
 
 export const route = createRouter({
   history: routerHistory,
@@ -13,7 +12,8 @@ export const route = createRouter({
     },
     {
       path: '/',
-      component: Index as ComponentPublicInstance<any>,
+      // 型が怪しいので一旦潰す
+      component: Index as any,
     },
   ],
 })
