@@ -1,5 +1,6 @@
-import { h } from '~/helpers/h'
 import { createApp, defineComponent, App } from 'vue'
+import { useRoute } from 'vue-router'
+import { h } from '~/helpers/h'
 import { route } from '~/router'
 
 const App = defineComponent({
@@ -7,12 +8,12 @@ const App = defineComponent({
   render() {
     return (
       <div>
-        <router-view />
+        <router-view></router-view>
+        { useRoute().fullPath }
       </div>
     )
   }
 })
-
 
 const app = createApp(App)
 app.use(route)

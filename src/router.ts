@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import { Index } from '~/views/index.tsx'
+import Index from '~/views/index.tsx'
 
 export const routerHistory = createWebHistory()
 
