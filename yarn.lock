@@ -5748,10 +5748,10 @@ vue-eslint-parser@^7.0.0:
     esquery "^1.0.1"
     lodash "^4.17.15"
 
-vue-router@^3.1.6:
-  version "3.1.6"
-  resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-3.1.6.tgz#45f5a3a3843e31702c061dd829393554e4328f89"
-  integrity sha512-GYhn2ynaZlysZMkFE5oCHRUTqE8BWs/a9YbKpNLi0i7xD6KG1EzDqpHQmv1F5gXjr8kL5iIVS8EOtRaVUEXTqA==
+vue-router@^4.0.0-alpha.7:
+  version "4.0.0-alpha.7"
+  resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-4.0.0-alpha.7.tgz#b3babfa831710bac189bba1f81a79cb0d0c3b524"
+  integrity sha512-B1wghgEeFZSjBRPa6rTjy82/b8ArfrirY+Y8ZxZXdkOg4mQpfSPnTfgWGNa1n4dCLDiUiNl1BYhhW0s4fqV3gQ==
 
 vue@3.0.0-beta.1:
   version "3.0.0-beta.1"

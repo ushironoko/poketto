@@ -1,12 +1,10 @@
 import { h } from '~/helpers/h'
 import { createApp, defineComponent } from 'vue'
-import Router from 'vue-router'
-import { route } from '~/route'
+import { route } from '~/router'
 
 
 const App = defineComponent({
   name: 'App',
-  router: route,
   render() {
     return (
       <div>
@@ -17,5 +15,5 @@ const App = defineComponent({
 })
 
 const app = createApp(App)
-app.use(Router)
+app.use(route)
 app.mount('#root')
