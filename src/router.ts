@@ -12,7 +12,6 @@ export const route = createRouter({
     },
     {
       path: '/',
-      // 型が怪しいので一旦潰す
       component: Index as any,
     },
   ],
